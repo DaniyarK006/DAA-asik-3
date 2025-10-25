@@ -1,12 +1,12 @@
 ```markdown
 # MST Algorithms – Assignment 3  | Daniyar Kairatov
-**Implementation of Prim’s and Kruskal’s algorithms in Java**
+Implementation of Prim’s and Kruskal’s algorithms in Java
 
-This project implements two classical algorithms for finding the **Minimum Spanning Tree (MST)**:  
-- **Prim’s Algorithm** (priority queue–based)  
-- **Kruskal’s Algorithm** (union–find–based)
+This project implements two classical algorithms for finding the Minimum Spanning Tree (MST):  
+- Prim’s Algorithm (priority queue–based)  
+- Kruskal’s Algorithm (union–find–based)
 
-The program reads graph data from a JSON file, computes MSTs for all provided graphs, and outputs detailed metrics for analysis and comparison.
+The program reads graph data from a JSON file, computes MSTs for all provided graphs, and outputs detailed metrics for analysis and comparison
 
 ---
 
@@ -35,9 +35,9 @@ design DAA/
 ---
 
 ##  What It Does
-1. **Reads** `ass_3_input.json`
-2. **Computes MSTs** for each graph using both algorithms  
-3. **Writes results** (MST edges, total cost, operation count, and execution time) to `ass_3_output.json`
+1. Reads `ass_3_input.json`
+2. Computes MSTs for each graph using both algorithms  
+3. Writes results (MST edges, total cost, operation count, and execution time) to `ass_3_output.json`
 
 ---
 
@@ -63,8 +63,8 @@ java -cp out utils.Main
 
 ##  Input and Output
 
-**Input:** `ass_3_input.json`
-**Output:** `ass_3_output.json`
+Input: `ass_3_input.json`
+Output: `ass_3_output.json`
 
 ### Example Input:
 
@@ -101,7 +101,7 @@ java -cp out utils.Main
 
 ---
 
-##  Summary of Results
+  Summary of Results
 
 | Graph ID | Algorithm | MST Cost | Execution Time (ms) | Operation Count |
 | -------- | --------- | -------- | ------------------- | --------------- |
@@ -110,20 +110,20 @@ java -cp out utils.Main
 | 2        | Prim’s    | 6        | 0.94                | 112             |
 | 2        | Kruskal’s | 6        | 0.78                | 97              |
 
-> *Note:* Results are based on local runs in IntelliJ IDEA using Java 17.
-> Operation counts represent total key operations (comparisons, union/finds, edge selections).
+> Note: Results are based on local runs in IntelliJ IDEA using Java 17
+> Operation counts represent total key operations (comparisons, union/finds, edge selections)
 
 ---
 
-##  Algorithm Comparison
+Algorithm Comparison
 
-### Prim’s Algorithm
+Prim’s Algorithm
 
-* **Approach:** Incremental greedy using priority queue (min-heap)
-* **Complexity:** O((V + E) log V)
-* **Best for:** Dense graphs (many edges)
-* **Data Structures:** Adjacency list, `PriorityQueue`
-* **Observations:**
+* Approach: Incremental greedy using priority queue (min-heap)
+* Complexity: O((V + E) log V)
+* Best for: Dense graphs (many edges)
+* Data Structures: Adjacency list, `PriorityQueue`
+* Observations:
 
   * Performs more heap operations
   * Slightly slower for sparse graphs
@@ -131,11 +131,11 @@ java -cp out utils.Main
 
 ### Kruskal’s Algorithm
 
-* **Approach:** Sorts all edges by weight, builds MST via union–find
-* **Complexity:** O(E log E)
-* **Best for:** Sparse graphs
-* **Data Structures:** Custom `UnionFind` with path compression and rank heuristics
-* **Observations:**
+* Approach: Sorts all edges by weight, builds MST via union–find
+* Complexity: O(E log E)
+* Best for: Sparse graphs
+* Data Structures: Custom `UnionFind` with path compression and rank heuristics
+* Observations:
 
   * Fewer operations when the graph is sparse
   * Very efficient for disconnected or edge-heavy datasets
@@ -145,12 +145,12 @@ java -cp out utils.Main
 
 ##  Conclusions
 
-Both algorithms yield identical MST costs for the same graphs.
-However, their **performance depends on graph density**:
+Both algorithms yield identical MST costs for the same graphs
+However, their performance depends on graph density:
 
-* **For dense graphs:** Prim’s algorithm is more efficient due to fewer union–find calls.
-* **For sparse graphs:** Kruskal’s algorithm performs better because it avoids unnecessary edge exploration.
-* **In practice:** Kruskal’s tends to be easier to implement and analyze, while Prim’s integrates naturally with adjacency structures.
+* For dense graphs: Prim’s algorithm is more efficient due to fewer union–find calls
+* For sparse graphs: Kruskal’s algorithm performs better because it avoids unnecessary edge exploration
+* In practice: Kruskal’s tends to be easier to implement and analyze, while Prim’s integrates naturally with adjacency structures
 
 | Condition                  | Recommended Algorithm | Reason                                |
 | -------------------------- | --------------------- | ------------------------------------- |
@@ -164,14 +164,14 @@ However, their **performance depends on graph density**:
 
 ##  Technologies Used
 
-* **Language:** Java 17
-* **Environment:** IntelliJ IDEA
-* **JSON Parsing:** Custom lightweight parser (`InputParser.java`)
-* **Union–Find:** Implemented manually with path compression and union by rank
+* Language: Java 17
+* Environment: IntelliJ IDEA
+* JSON Parsing: Custom lightweight parser (`InputParser.java`)
+* Union–Find: Implemented manually with path compression and union by rank
 
 ---
 
-##  Example Console Output
+Example Console Output
 
 ```
 Analysis complete. Results written to ass_3_output.json
@@ -181,5 +181,3 @@ Graph 2 → MST cost = 6
 
 DaniyarK006 — Design DAA Project (Assignment 3)
 
-и пример описания репозитория для GitHub (description + tags)?
-```
