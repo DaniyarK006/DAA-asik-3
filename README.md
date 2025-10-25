@@ -11,8 +11,6 @@ The program reads graph data from a JSON file, computes MSTs for all provided gr
 ---
 
 ##  Project Structure
-```
-
 design DAA/
 ├── src/
 │   ├── algoritm/
@@ -30,7 +28,8 @@ design DAA/
 ├── ass_3_output.json
 └── design DAA.iml
 
-````
+```
+
 
 ---
 
