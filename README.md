@@ -161,15 +161,6 @@ However, their performance depends on graph density:
 ---
 
 
-##  Technologies Used
-
-* Language: Java 17
-* Environment: IntelliJ IDEA
-* JSON Parsing: Custom lightweight parser (`InputParser.java`)
-* Union–Find: Implemented manually with path compression and union by rank
-
----
-
 Example Console Output
 
 ```
@@ -178,5 +169,5 @@ Graph 1 → MST cost = 17
 Graph 2 → MST cost = 6
 ```
 
-DaniyarK006 — Design DAA Project (Assignment 3)
+#DaniyarK006 — DAA Project (Assignment 3)
 
