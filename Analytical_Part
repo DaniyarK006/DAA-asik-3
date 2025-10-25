@@ -117,4 +117,4 @@ Summary:
 Kruskal’s algorithm demonstrates better overall performance for the tested networks, especially when the edge-to-vertex ratio is moderate
 Prim’s algorithm remains more efficient for dense, fully connected graphs and when an adjacency structure is directly available
 
-Both methods show sub-millisecond runtimes for small graphs, validating optimal complexity in practice.
+Both methods show sub-millisecond runtimes for small graphs, validating optimal complexity in practice
