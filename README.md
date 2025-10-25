@@ -109,7 +109,7 @@ Output: `ass_3_output.json`
 | 2        | Prim’s    | 6        | 0.94                | 112             |
 | 2        | Kruskal’s | 6        | 0.78                | 97              |
 
-> Note: Results are based on local runs in IntelliJ IDEA using Java 17
+> Note: Results are based on local runs in IntelliJ IDEA
 > Operation counts represent total key operations (comparisons, union/finds, edge selections)
 
 ---
